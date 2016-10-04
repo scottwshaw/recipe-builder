@@ -1,0 +1,1193 @@
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 2.47 seconds.[0m
+[36m----  Could not Read  src/cljs/recipe_builder/core.cljs   line:36  column:3  ----[0m
+
+  [1mEOF while reading, starting at line 36 and column 3[0m
+
+  [36m35[0m  [36m(defn add-grain-form [][0m
+  [33m36[0m  [1m  [:div.form-group[0m
+  [0m  [0m  [33m  ^--- EOF while reading, starting at line 36 and column 3[0m
+  [36m37[0m  [36m   [:label "type of grain"][0m
+  [36m38[0m  [36m   [:select.form-control {:field :list :id :many.options}][0m
+  [36m39[0m  [36m   ;; (let [options (map-indexed #(identity [:option {:key %1} %2]) grains)][0m
+
+[36m----  Reader Error : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.503 seconds.[0m
+[36m----  Could not Read  src/cljs/recipe_builder/core.cljs   line:38  column:4  ----[0m
+
+  [1mEOF while reading, starting at line 38 and column 4[0m
+
+  [36m36[0m  [36m[:div.form-group[0m
+  [36m37[0m  [36m [:label "type of grain"][0m
+  [33m38[0m  [1m [:select.form-control {:field :list :id :many.options}[0m
+  [0m  [0m  [33m ^--- EOF while reading, starting at line 38 and column 4[0m
+  [36m39[0m  [36m  [0m
+  [36m40[0m  [36m [0m
+  [36m41[0m  [36m ;; (let [options (map-indexed #(identity [:option {:key %1} %2]) grains)][0m
+
+[36m----  Reader Error : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 1.138 seconds.[0m
+[36m----  Could not Read  src/cljs/recipe_builder/core.cljs   line:39  column:5  ----[0m
+
+  [1mEOF while reading, starting at line 39 and column 5[0m
+
+  [36m37[0m  [36m[:label "type of grain"][0m
+  [36m38[0m  [36m[:select.form-control {:field :list :id :many.options}[0m
+  [33m39[0m  [1m (for [g grains][0m
+  [0m  [0m  [33m ^--- EOF while reading, starting at line 39 and column 5[0m
+  [36m40[0m  [36m   [:option {:key (.indexOf g grains)} g][0m
+  [36m41[0m  [36m[0m
+  [36m42[0m  [36m;; (let [options (map-indexed #(identity [:option {:key %1} %2]) grains)][0m
+
+[36m----  Reader Error : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/recipe_builder/core.cljs   line:114  column:4  ----[0m
+
+  [1mUse of undeclared Var recipe-builder.core/atom-text-input[0m
+
+  [36m110[0m  [36m(def form[0m
+  [36m111[0m  [36m [:div[0m
+  [36m112[0m  [36m  [:div.page-header [:h2 "Signup form: Step 1"]][0m
+  [36m113[0m  [36m  [:p "Please enter your username or e-mail and your public key."][0m
+  [33m114[0m  [1m  [atom-text-input :username "Username" username][0m
+  [0m   [0m  [33m   ^--- Use of undeclared Var recipe-builder.core/atom-text-input[0m
+  [36m115[0m  [36m  [atom-text-area :public_key "Public key (*)" public-key]])[0m
+
+[36m----  Compiler Warning : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/recipe_builder/core.cljs   line:114  column:41  ----[0m
+
+  [1mUse of undeclared Var recipe-builder.core/username[0m
+
+  [36m110[0m  [36m(def form[0m
+  [36m111[0m  [36m [:div[0m
+  [36m112[0m  [36m  [:div.page-header [:h2 "Signup form: Step 1"]][0m
+  [36m113[0m  [36m  [:p "Please enter your username or e-mail and your public key."][0m
+  [33m114[0m  [1m  [atom-text-input :username "Username" username][0m
+  [0m   [0m  [33m                                        ^--- Use of undeclared Var recipe-builder.core/username[0m
+  [36m115[0m  [36m  [atom-text-area :public_key "Public key (*)" public-key]])[0m
+
+[36m----  Compiler Warning : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/recipe_builder/core.cljs   line:115  column:4  ----[0m
+
+  [1mUse of undeclared Var recipe-builder.core/atom-text-area[0m
+
+  [36m111[0m  [36m[:div[0m
+  [36m112[0m  [36m [:div.page-header [:h2 "Signup form: Step 1"]][0m
+  [36m113[0m  [36m [:p "Please enter your username or e-mail and your public key."][0m
+  [36m114[0m  [36m [atom-text-input :username "Username" username][0m
+  [33m115[0m  [1m [atom-text-area :public_key "Public key (*)" public-key]])[0m
+  [0m   [0m  [33m  ^--- Use of undeclared Var recipe-builder.core/atom-text-area[0m
+
+[36m----  Compiler Warning : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/recipe_builder/core.cljs   line:115  column:48  ----[0m
+
+  [1mUse of undeclared Var recipe-builder.core/public-key[0m
+
+  [36m111[0m  [36m[:div[0m
+  [36m112[0m  [36m [:div.page-header [:h2 "Signup form: Step 1"]][0m
+  [36m113[0m  [36m [:p "Please enter your username or e-mail and your public key."][0m
+  [36m114[0m  [36m [atom-text-input :username "Username" username][0m
+  [33m115[0m  [1m [atom-text-area :public_key "Public key (*)" public-key]])[0m
+  [0m   [0m  [33m                                              ^--- Use of undeclared Var recipe-builder.core/public-key[0m
+
+[36m----  Compiler Warning : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 2.343 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.853 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 1.089 seconds.[0m
+[36m----  Could not Read  src/cljs/recipe_builder/core.cljs   line:39  column:5  ----[0m
+
+  [1mEOF while reading, starting at line 39 and column 5[0m
+
+  [36m37[0m  [36m   [:label "type of grain"][0m
+  [36m38[0m  [36m   [:select.form-control {:field :list :id :many.options}[0m
+  [33m39[0m  [1m    (for [g grains][0m
+  [0m  [0m  [33m    ^--- EOF while reading, starting at line 39 and column 5[0m
+  [36m40[0m  [36m      ;; [:option {:key (.indexOf g grains)} g])]])[0m
+  [36m41[0m  [36m   [0m
+  [36m42[0m  [36m(defn grains-page [][0m
+
+[36m----  Reader Error : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.423 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.345 seconds.[0m
+[36m----  Could not Read  src/cljs/recipe_builder/core.cljs   line:39  column:5  ----[0m
+
+  [1mEOF while reading, starting at line 39 and column 5[0m
+
+  [36m37[0m  [36m   [:label "type of grain"][0m
+  [36m38[0m  [36m   [:select.form-control {:field :list :id :many.options}[0m
+  [33m39[0m  [1m    (for [g grains][0m
+  [0m  [0m  [33m    ^--- EOF while reading, starting at line 39 and column 5[0m
+  [36m40[0m  [36m      ;; [:option {:key (.indexOf g grains)} g])]])[0m
+  [36m41[0m  [36m   [0m
+  [36m42[0m  [36m(defn grains-page [][0m
+
+[36m----  Reader Error : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.678 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.637 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.356 seconds.[0m
+[36m----  Could not Read  src/cljs/recipe_builder/core.cljs   line:39  column:5  ----[0m
+
+  [1mEOF while reading, starting at line 39 and column 5[0m
+
+  [36m37[0m  [36m[:label "type of grain"][0m
+  [36m38[0m  [36m[:select.form-control {:field :list :id :many.options}[0m
+  [33m39[0m  [1m (for [g grains][0m
+  [0m  [0m  [33m ^--- EOF while reading, starting at line 39 and column 5[0m
+  [36m40[0m  [36m   ;; [:option {:key (.indexOf g grains)} g])]])[0m
+  [36m41[0m  [36m   [:option {:key (.indexOf "a" grains)} "a"][0m
+  [36m42[0m  [36m   [:option {:key (.indexOf "b" grains)} "b"][0m
+
+[36m----  Reader Error : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.334 seconds.[0m
+[36m----  Could not Read  src/cljs/recipe_builder/core.cljs   line:38  column:4  ----[0m
+
+  [1mEOF while reading, starting at line 38 and column 4[0m
+
+  [36m36[0m  [36m[:div.form-group[0m
+  [36m37[0m  [36m [:label "type of grain"][0m
+  [33m38[0m  [1m [:select.form-control {:field :list :id :many.options}[0m
+  [0m  [0m  [33m ^--- EOF while reading, starting at line 38 and column 4[0m
+  [36m39[0m  [36m  ;; (for [g grains][0m
+  [36m40[0m  [36m    ;; [:option {:key (.indexOf g grains)} g])]])[0m
+  [36m41[0m  [36m    [:option {:key (.indexOf "a" grains)} "a"][0m
+
+[36m----  Reader Error : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.326 seconds.[0m
+[36m----  Could not Read  src/cljs/recipe_builder/core.cljs   line:38  column:4  ----[0m
+
+  [1mEOF while reading, starting at line 38 and column 4[0m
+
+  [36m36[0m  [36m[:div.form-group[0m
+  [36m37[0m  [36m [:label "type of grain"][0m
+  [33m38[0m  [1m [:select.form-control {:field :list :id :many.options}[0m
+  [0m  [0m  [33m ^--- EOF while reading, starting at line 38 and column 4[0m
+  [36m39[0m  [36m  ;; (for [g grains][0m
+  [36m40[0m  [36m  ;; [:option {:key (.indexOf g grains)} g])]])[0m
+  [36m41[0m  [36m    [:option {:key (.indexOf "a" grains)} "a"][0m
+
+[36m----  Reader Error : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.837 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.698 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 3.031 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.536 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.565 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.714 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.316 seconds.[0m
+[36m----  Could not Read  src/cljs/recipe_builder/core.cljs   line:42  column:7  ----[0m
+
+  [1mUnmatched delimiter ][0m
+
+  [36m40[0m  [36m       [:option {:key g} g])][0m
+  [36m41[0m  [36m    [0m
+  [33m42[0m  [1m    ]][0m
+  [0m  [0m  [33m      ^--- Unmatched delimiter ][0m
+  [36m43[0m  [36m  )[0m
+  [36m44[0m  [36m   [0m
+  [36m45[0m  [36m(defn grains-page [][0m
+
+[36m----  Reader Error : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.791 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.332 seconds.[0m
+[36m----  Could not Read  src/cljs/recipe_builder/core.cljs   line:44  column:4  ----[0m
+
+  [1mUnmatched delimiter )[0m
+
+  [36m42[0m  [36m   [:label "quantity"][0m
+  [36m43[0m  [36m  [0m
+  [33m44[0m  [1m  )[0m
+  [0m  [0m  [33m   ^--- Unmatched delimiter )[0m
+  [36m45[0m  [36m   [0m
+  [36m46[0m  [36m(defn grains-page [][0m
+  [36m47[0m  [36m  [:div.container[0m
+
+[36m----  Reader Error : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.529 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 1.123 seconds.[0m
+[36m----  Could not Read  src/cljs/recipe_builder/core.cljs   line:47  column:4  ----[0m
+
+  [1mUnmatched delimiter )[0m
+
+  [36m45[0m  [36m    ][0m
+  [36m46[0m  [36m  [0m
+  [33m47[0m  [1m  )[0m
+  [0m  [0m  [33m   ^--- Unmatched delimiter )[0m
+  [36m48[0m  [36m   [0m
+  [36m49[0m  [36m(defn grains-page [][0m
+  [36m50[0m  [36m  [:div.container[0m
+
+[36m----  Reader Error : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.785 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.612 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.53 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.496 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/recipe_builder/core.cljs   line:45  column:49  ----[0m
+
+  [1mUse of undeclared Var recipe-builder.core/quantity[0m
+
+  [36m41[0m  [36m      (for [g grains][0m
+  [36m42[0m  [36m        [:option {:key g} g])]]][0m
+  [36m43[0m  [36m   [:div.row[0m
+  [36m44[0m  [36m    [:div.col-md-2 [:label "quanity"]][0m
+  [33m45[0m  [1m    [:div.col-md-2 [:input.form-control {:field quantity}]]]])[0m
+  [0m  [0m  [33m                                                ^--- Use of undeclared Var recipe-builder.core/quantity[0m
+  [36m46[0m  [36m   [0m
+  [36m47[0m  [36m(defn grains-page [][0m
+  [36m48[0m  [36m  [:div.container[0m
+  [36m49[0m  [36m   [:div.row[0m
+  [36m50[0m  [36m    [:div.col-md-12[0m
+
+[36m----  Compiler Warning : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.716 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.508 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.464 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.466 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 6.182 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 2.08 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 1.534 seconds.[0m
+[36m----  Could not Read  src/cljs/recipe_builder/core.cljs   line:37  column:1  ----[0m
+
+  [1mEOF while reading, starting at line 37 and column 1[0m
+
+  [36m35[0m  [36m(def order (r/atom {}))[0m
+  [36m36[0m  [36m[0m
+  [33m37[0m  [1m(def display-order[0m
+  [0m  [0m  [33m^--- EOF while reading, starting at line 37 and column 1[0m
+  [36m38[0m  [36m[0m
+  [36m39[0m  [36m(defn add-grain-form [][0m
+  [36m40[0m  [36m  [:div.form-group[0m
+
+[36m----  Reader Error : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 1.924 seconds.[0m
+[36m----  Could not Read  src/cljs/recipe_builder/core.cljs   line:40  column:5  ----[0m
+
+  [1mEOF while reading, starting at line 40 and column 5[0m
+
+  [36m38[0m  [36m  [:div.container[0m
+  [36m39[0m  [36m   [:div.row[0m
+  [33m40[0m  [1m    [:div.col-md-2 [0m
+  [0m  [0m  [33m    ^--- EOF while reading, starting at line 40 and column 5[0m
+  [36m41[0m  [36m[0m
+  [36m42[0m  [36m(defn add-grain-form [][0m
+  [36m43[0m  [36m  [:div.form-group[0m
+
+[36m----  Reader Error : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.906 seconds.[0m
+[36m----  Could not Read  src/cljs/recipe_builder/core.cljs   line:41  column:5  ----[0m
+
+  [1mEOF while reading, starting at line 41 and column 5[0m
+
+  [36m39[0m  [36m   (for o in [0m
+  [36m40[0m  [36m   [:div.row[0m
+  [33m41[0m  [1m    [:div.col-md-2 [0m
+  [0m  [0m  [33m    ^--- EOF while reading, starting at line 41 and column 5[0m
+  [36m42[0m  [36m[0m
+  [36m43[0m  [36m(defn add-grain-form [][0m
+  [36m44[0m  [36m  [:div.form-group[0m
+
+[36m----  Reader Error : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.3 seconds.[0m
+[36m----  Could not Read  src/cljs/recipe_builder/core.cljs   line:41  column:5  ----[0m
+
+  [1mEOF while reading, starting at line 41 and column 5[0m
+
+  [36m39[0m  [36m   (for [o orders][0m
+  [36m40[0m  [36m   [:div.row[0m
+  [33m41[0m  [1m    [:div.col-md-2 [0m
+  [0m  [0m  [33m    ^--- EOF while reading, starting at line 41 and column 5[0m
+  [36m42[0m  [36m[0m
+  [36m43[0m  [36m(defn add-grain-form [][0m
+  [36m44[0m  [36m  [:div.form-group[0m
+
+[36m----  Reader Error : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 1.58 seconds.[0m
+[36m----  Could not Read  src/cljs/recipe_builder/core.cljs   line:42  column:5  ----[0m
+
+  [1mEOF while reading, starting at line 42 and column 5[0m
+
+  [36m40[0m  [36m    (for [o orders][0m
+  [36m41[0m  [36m   [:div.row[0m
+  [33m42[0m  [1m    [:div.col-md-2 [0m
+  [0m  [0m  [33m    ^--- EOF while reading, starting at line 42 and column 5[0m
+  [36m43[0m  [36m[0m
+  [36m44[0m  [36m(defn add-grain-form [][0m
+  [36m45[0m  [36m  [:div.form-group[0m
+
+[36m----  Reader Error : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.343 seconds.[0m
+[36m----  Could not Read  src/cljs/recipe_builder/core.cljs   line:42  column:5  ----[0m
+
+  [1mEOF while reading, starting at line 42 and column 5[0m
+
+  [36m40[0m  [36m    (for [o orders][0m
+  [36m41[0m  [36m   [:div.row[0m
+  [33m42[0m  [1m    [:div.col-md-2 [0m
+  [0m  [0m  [33m    ^--- EOF while reading, starting at line 42 and column 5[0m
+  [36m43[0m  [36m[0m
+  [36m44[0m  [36m(defn add-grain-form [][0m
+  [36m45[0m  [36m  [:div.form-group[0m
+
+[36m----  Reader Error : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 1.116 seconds.[0m
+[36m----  Could not Read  src/cljs/recipe_builder/core.cljs   line:40  column:33  ----[0m
+
+  [1mMap literal must contain an even number of forms[0m
+
+  [36m38[0m  [36m[:div.container[0m
+  [36m39[0m  [36m [:ul.list-group[0m
+  [33m40[0m  [1m  (for [{:keys quantity grain} orders][0m
+  [0m  [0m  [33m                              ^--- Map literal must contain an even number of forms[0m
+  [36m41[0m  [36m    [:li.list-group-item[0m
+  [36m42[0m  [36m     (str (:quantity o) "kg of " (:grain o)[0m
+  [36m43[0m  [36m [:div.row[0m
+
+[36m----  Reader Error : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 1.074 seconds.[0m
+[36m----  Could not Read  src/cljs/recipe_builder/core.cljs   line:40  column:33  ----[0m
+
+  [1mMap literal must contain an even number of forms[0m
+
+  [36m38[0m  [36m[:div.container[0m
+  [36m39[0m  [36m [:ul.list-group[0m
+  [33m40[0m  [1m  (for [{:keys quantity grain} orders][0m
+  [0m  [0m  [33m                              ^--- Map literal must contain an even number of forms[0m
+  [36m41[0m  [36m    [:li.list-group-item[0m
+  [36m42[0m  [36m     (str quantity "kg of " grain)])]])[0m
+
+[36m----  Reader Error : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 1.238 seconds.[0m
+[36m----  Could not Read  src/cljs/recipe_builder/core.cljs   line:40  column:33  ----[0m
+
+  [1mMap literal must contain an even number of forms[0m
+
+  [36m38[0m  [36m[:div.container[0m
+  [36m39[0m  [36m [:ul.list-group[0m
+  [33m40[0m  [1m  (for [{:keys quantity grain} orders][0m
+  [0m  [0m  [33m                              ^--- Map literal must contain an even number of forms[0m
+  [36m41[0m  [36m    [:li.list-group-item[0m
+  [36m42[0m  [36m     (str quantity "kg of " grain)])]])[0m
+
+[36m----  Reader Error : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 1.922 seconds.[0m
+[36m----  Could not Read  src/cljs/recipe_builder/core.cljs   line:40  column:33  ----[0m
+
+  [1mMap literal must contain an even number of forms[0m
+
+  [36m38[0m  [36m[:div.container[0m
+  [36m39[0m  [36m [:ul.list-group[0m
+  [33m40[0m  [1m  (for [{:keys quantity grain} orders][0m
+  [0m  [0m  [33m                              ^--- Map literal must contain an even number of forms[0m
+  [36m41[0m  [36m    [:li.list-group-item[0m
+  [36m42[0m  [36m     (str quantity "kg of " grain)])]])[0m
+
+[36m----  Reader Error : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 1.975 seconds.[0m
+[36m----  Could not Analyze  src/cljs/recipe_builder/core.cljs   line:37  column:1  ----[0m
+
+  [1mToo many arguments to def at line 37 /Users/sshaw/Documents/Development/GGScraper/recipe-builder/src/cljs/recipe_builder/core.cljs[0m
+
+  [36m35[0m  [36m(def orders (r/atom [{:quantity 0.2 :grain "barley"} {:quantity 1.0 :grain "wheat"}]))[0m
+  [36m36[0m  [36m[0m
+  [33m37[0m  [1m(def order-panel [][0m
+  [0m  [0m  [33m^--- Too many arguments to def at line 37 /Users/sshaw/Documents/Development/GGScraper/recipe-builder/src/cljs/recipe_builder/core.cljs[0m
+  [36m38[0m  [36m  [:div.container[0m
+  [36m39[0m  [36m   [:ul.list-group[0m
+  [36m40[0m  [36m    (for [{:keys [quantity grain]} orders][0m
+
+[36m----  Analysis Error : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 1.148 seconds.[0m
+[36m----  Could not Analyze  src/cljs/recipe_builder/core.cljs   line:37  column:1  ----[0m
+
+  [1mToo many arguments to def at line 37 /Users/sshaw/Documents/Development/GGScraper/recipe-builder/src/cljs/recipe_builder/core.cljs[0m
+
+  [36m35[0m  [36m(def orders (r/atom [{:quantity 0.2 :grain "barley"} {:quantity 1.0 :grain "wheat"}]))[0m
+  [36m36[0m  [36m[0m
+  [33m37[0m  [1m(def order-panel [][0m
+  [0m  [0m  [33m^--- Too many arguments to def at line 37 /Users/sshaw/Documents/Development/GGScraper/recipe-builder/src/cljs/recipe_builder/core.cljs[0m
+  [36m38[0m  [36m  [:div.container[0m
+  [36m39[0m  [36m   [:ul.list-group[0m
+  [36m40[0m  [36m    (for [{:keys [quantity grain]} orders][0m
+
+[36m----  Analysis Error : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 3.842 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 2.875 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 2.709 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.882 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.879 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 2.843 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 2.127 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.801 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.635 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 2.383 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.567 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.534 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.429 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.489 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 4.295 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 2.112 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 1.048 seconds.[0m
+[36m----  Could not Read  src/cljs/recipe_builder/core.cljs   line:57  column:69  ----[0m
+
+  [1mUnmatched delimiter ][0m
+
+  [36m55[0m  [36m   [:div.row[0m
+  [36m56[0m  [36m    [:div.col-md-2 [:label "quantity"]][0m
+  [33m57[0m  [1m    [:div.col-md-2 [:input.form-control {:field :text :id :quantity]]]])[0m
+  [0m  [0m  [33m                                                                    ^--- Unmatched delimiter ][0m
+  [36m58[0m  [36m[0m
+  [36m59[0m  [36m(defn grains-page [][0m
+  [36m60[0m  [36m  [:div.container[0m
+
+[36m----  Reader Error : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 2.419 seconds.[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.076 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.94 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 1.046 seconds.[0m
+[36m----  Could not Analyze  src/cljs/recipe_builder/core.cljs   line:47  column:1  ----[0m
+
+  [1mToo many arguments to def at line 47 src/cljs/recipe_builder/core.cljs[0m
+
+  [33m47[0m  [1m(def add-grain-form-template [][0m
+  [0m  [0m  [33m^--- Too many arguments to def at line 47 src/cljs/recipe_builder/core.cljs[0m
+  [36m48[0m  [36m  [:div.form-group[0m
+  [36m49[0m  [36m   [:div.row[0m
+  [36m50[0m  [36m    [:div.col-md-2  [:label "type of grain"]][0m
+
+[36m----  Analysis Error : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 1.624 seconds.[0m
+[36m----  Could not Analyze  src/cljs/recipe_builder/core.cljs   line:47  column:1  ----[0m
+
+  [1mToo many arguments to def at line 47 src/cljs/recipe_builder/core.cljs[0m
+
+  [33m47[0m  [1m(def add-grain-form-template [][0m
+  [0m  [0m  [33m^--- Too many arguments to def at line 47 src/cljs/recipe_builder/core.cljs[0m
+  [36m48[0m  [36m  [:div.form-group[0m
+  [36m49[0m  [36m   [:div.row[0m
+  [36m50[0m  [36m    [:div.col-md-2  [:label "type of grain"]][0m
+
+[36m----  Analysis Error : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 1.007 seconds.[0m
+[36m----  Could not Analyze  src/cljs/recipe_builder/core.cljs   line:47  column:1  ----[0m
+
+  [1mToo many arguments to def at line 47 src/cljs/recipe_builder/core.cljs[0m
+
+  [33m47[0m  [1m(def add-grain-form-template [][0m
+  [0m  [0m  [33m^--- Too many arguments to def at line 47 src/cljs/recipe_builder/core.cljs[0m
+  [36m48[0m  [36m  [:div.form-group[0m
+  [36m49[0m  [36m   [:div.row[0m
+  [36m50[0m  [36m    [:div.col-md-2  [:label "type of grain"]][0m
+
+[36m----  Analysis Error : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.296 seconds.[0m
+[36m----  Could not Analyze  src/cljs/recipe_builder/core.cljs   line:47  column:1  ----[0m
+
+  [1mToo many arguments to def at line 47 src/cljs/recipe_builder/core.cljs[0m
+
+  [33m47[0m  [1m(def add-grain-form-template [][0m
+  [0m  [0m  [33m^--- Too many arguments to def at line 47 src/cljs/recipe_builder/core.cljs[0m
+  [36m48[0m  [36m  [:div.form-group[0m
+  [36m49[0m  [36m   [:div.row[0m
+  [36m50[0m  [36m    [:div.col-md-2  [:label "type of grain"]][0m
+
+[36m----  Analysis Error : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.298 seconds.[0m
+[36m----  Could not Analyze  src/cljs/recipe_builder/core.cljs   line:47  column:1  ----[0m
+
+  [1mToo many arguments to def at line 47 src/cljs/recipe_builder/core.cljs[0m
+
+  [33m47[0m  [1m(def add-grain-form-template [][0m
+  [0m  [0m  [33m^--- Too many arguments to def at line 47 src/cljs/recipe_builder/core.cljs[0m
+  [36m48[0m  [36m  [:div.form-group[0m
+  [36m49[0m  [36m   [:div.row[0m
+  [36m50[0m  [36m    [:div.col-md-2  [:label "type of grain"]][0m
+
+[36m----  Analysis Error : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.311 seconds.[0m
+[36m----  Could not Analyze  src/cljs/recipe_builder/core.cljs   line:47  column:1  ----[0m
+
+  [1mToo many arguments to def at line 47 src/cljs/recipe_builder/core.cljs[0m
+
+  [33m47[0m  [1m(def add-grain-form-template [][0m
+  [0m  [0m  [33m^--- Too many arguments to def at line 47 src/cljs/recipe_builder/core.cljs[0m
+  [36m48[0m  [36m  [:div.form-group[0m
+  [36m49[0m  [36m   [:div.row[0m
+  [36m50[0m  [36m    [:div.col-md-2  [:label "type of grain"]][0m
+
+[36m----  Analysis Error : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.302 seconds.[0m
+[36m----  Could not Analyze  src/cljs/recipe_builder/core.cljs   line:47  column:1  ----[0m
+
+  [1mToo many arguments to def at line 47 src/cljs/recipe_builder/core.cljs[0m
+
+  [33m47[0m  [1m(def add-grain-form-template [][0m
+  [0m  [0m  [33m^--- Too many arguments to def at line 47 src/cljs/recipe_builder/core.cljs[0m
+  [36m48[0m  [36m  [:div.form-group[0m
+  [36m49[0m  [36m   [:div.row[0m
+  [36m50[0m  [36m    [:div.col-md-2  [:label "type of grain"]][0m
+
+[36m----  Analysis Error : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.296 seconds.[0m
+[36m----  Could not Analyze  src/cljs/recipe_builder/core.cljs   line:47  column:1  ----[0m
+
+  [1mToo many arguments to def at line 47 src/cljs/recipe_builder/core.cljs[0m
+
+  [33m47[0m  [1m(def add-grain-form-template [][0m
+  [0m  [0m  [33m^--- Too many arguments to def at line 47 src/cljs/recipe_builder/core.cljs[0m
+  [36m48[0m  [36m  [:div.form-group[0m
+  [36m49[0m  [36m   [:div.row[0m
+  [36m50[0m  [36m    [:div.col-md-2  [:label "type of grain"]][0m
+
+[36m----  Analysis Error : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/recipe_builder/core.cljs   line:63  column:9  ----[0m
+
+  [1mUse of undeclared Var recipe-builder.core/bind-fields[0m
+
+  [36m59[0m  [36m(defn grain-form [][0m
+  [36m60[0m  [36m  (let [item (atom {})][0m
+  [36m61[0m  [36m    (fn [][0m
+  [36m62[0m  [36m      [:div[0m
+  [33m63[0m  [1m       [bind-fields add-grain-form-template item]])))[0m
+  [0m  [0m  [33m        ^--- Use of undeclared Var recipe-builder.core/bind-fields[0m
+  [36m64[0m  [36m[0m
+  [36m65[0m  [36m(defn grains-page [][0m
+  [36m66[0m  [36m  [:div.container[0m
+  [36m67[0m  [36m   [:div.row[0m
+  [36m68[0m  [36m    [:h2 "Current Order"]][0m
+
+[36m----  Compiler Warning : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.988 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.577 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.565 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.526 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.315 seconds.[0m
+[36m----  Could not Read  src/cljs/recipe_builder/core.cljs   line:59  column:75  ----[0m
+
+  [1mUnmatched delimiter }[0m
+
+  [36m57[0m  [36m    [:div.col-md-2 [:input.form-control {:field :numeric :id :item.quantity}]]][0m
+  [36m58[0m  [36m   [:div.row[0m
+  [33m59[0m  [1m    [:button.btn.btn-default {:key :add-item :on-click #(add-grains :item} "add grain to order"]]])[0m
+  [0m  [0m  [33m                                                                          ^--- Unmatched delimiter }[0m
+  [36m60[0m  [36m[0m
+  [36m61[0m  [36m(defn grain-form [][0m
+  [36m62[0m  [36m  (let [item (atom {})][0m
+
+[36m----  Reader Error : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.303 seconds.[0m
+[36m----  Could not Read  src/cljs/recipe_builder/core.cljs   line:59  column:75  ----[0m
+
+  [1mUnmatched delimiter }[0m
+
+  [36m57[0m  [36m    [:div.col-md-2 [:input.form-control {:field :numeric :id :item.quantity}]]][0m
+  [36m58[0m  [36m   [:div.row[0m
+  [33m59[0m  [1m    [:button.btn.btn-default {:key :add-item :on-click #(add-grains :item} "add grain to order"]]])[0m
+  [0m  [0m  [33m                                                                          ^--- Unmatched delimiter }[0m
+  [36m60[0m  [36m[0m
+  [36m61[0m  [36m(defn grain-form [][0m
+  [36m62[0m  [36m  (let [item (atom {})][0m
+
+[36m----  Reader Error : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.302 seconds.[0m
+[36m----  Could not Read  src/cljs/recipe_builder/core.cljs   line:37  column:43  ----[0m
+
+  [1mUnmatched delimiter ][0m
+
+  [36m35[0m  [36m(def orders (r/atom [{:quantity 0.2 :grain "barley"} {:quantity 1.0 :grain "wheat"}]))[0m
+  [36m36[0m  [36m[0m
+  [33m37[0m  [1m(defn add-grains [{:keys [quantity grain]][0m
+  [0m  [0m  [33m                                          ^--- Unmatched delimiter ][0m
+  [36m38[0m  [36m  (swap! orders #(conj % {:qantity quantity :grain grain})))[0m
+  [36m39[0m  [36m[0m
+  [36m40[0m  [36m(defn order-panel [][0m
+
+[36m----  Reader Error : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.312 seconds.[0m
+[36m----  Could not Read  src/cljs/recipe_builder/core.cljs   line:59  column:75  ----[0m
+
+  [1mUnmatched delimiter }[0m
+
+  [36m57[0m  [36m    [:div.col-md-2 [:input.form-control {:field :numeric :id :item.quantity}]]][0m
+  [36m58[0m  [36m   [:div.row[0m
+  [33m59[0m  [1m    [:button.btn.btn-default {:key :add-item :on-click #(add-grains :item} "add grain to order"]]])[0m
+  [0m  [0m  [33m                                                                          ^--- Unmatched delimiter }[0m
+  [36m60[0m  [36m[0m
+  [36m61[0m  [36m(defn grain-form [][0m
+  [36m62[0m  [36m  (let [item (atom {})][0m
+
+[36m----  Reader Error : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.47 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/recipe_builder/core.cljs   line:59  column:57  ----[0m
+
+  [1mWrong number of args (1) passed to recipe-builder.core/add-grains[0m
+
+  [36m55[0m  [36m   [:div.row[0m
+  [36m56[0m  [36m    [:div.col-md-2 [:label "quantity"]][0m
+  [36m57[0m  [36m    [:div.col-md-2 [:input.form-control {:field :numeric :id :item.quantity}]]][0m
+  [36m58[0m  [36m   [:div.row[0m
+  [33m59[0m  [1m    [:button.btn.btn-default {:key :add-item :on-click #(add-grains :item)} "add grain to order"]]])[0m
+  [0m  [0m  [33m                                                        ^--- Wrong number of args (1) passed to recipe-builder.core/add-grains[0m
+  [36m60[0m  [36m[0m
+  [36m61[0m  [36m(defn grain-form [][0m
+  [36m62[0m  [36m  (let [item (atom {})][0m
+  [36m63[0m  [36m    (fn [][0m
+  [36m64[0m  [36m      [:div[0m
+
+[36m----  Compiler Warning : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.538 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.441 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.765 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.464 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.468 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.463 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/recipe_builder/core.cljs   line:59  column:80  ----[0m
+
+  [1mUse of undeclared Var recipe-builder.core/item[0m
+
+  [36m55[0m  [36m   [:div.row[0m
+  [36m56[0m  [36m    [:div.col-md-2 [:label "quantity"]][0m
+  [36m57[0m  [36m    [:div.col-md-2 [:input.form-control {:field :numeric :id :quantity}]]][0m
+  [36m58[0m  [36m   [:div.row[0m
+  [33m59[0m  [1m    [:button.btn.btn-default {:key :add-item :on-click #(add-grains (:quantity item) :grain)} "add grain to order"]]])[0m
+  [0m  [0m  [33m                                                                               ^--- Use of undeclared Var recipe-builder.core/item[0m
+  [36m60[0m  [36m[0m
+  [36m61[0m  [36m(defn grain-form [][0m
+  [36m62[0m  [36m  (let [item (atom {})][0m
+  [36m63[0m  [36m    (fn [][0m
+  [36m64[0m  [36m      [:div[0m
+
+[36m----  Compiler Warning : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.541 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.467 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 1.097 seconds.[0m
+[36m----  Could not Read  src/cljs/recipe_builder/core.cljs   line:66  column:25  ----[0m
+
+  [1mInvalid token: :[0m
+
+  [36m64[0m  [36m      [:div[0m
+  [36m65[0m  [36m       [rf/bind-fields add-grain-form-template item[0m
+  [33m66[0m  [1m        #(when (some #{:]])))[0m
+  [0m  [0m  [33m                        ^--- Invalid token: :[0m
+  [36m67[0m  [36m[0m
+  [36m68[0m  [36m(defn grains-page [][0m
+  [36m69[0m  [36m  [:div.container[0m
+
+[36m----  Reader Error : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.308 seconds.[0m
+[36m----  Could not Read  src/cljs/recipe_builder/core.cljs   line:66  column:37  ----[0m
+
+  [1mUnmatched delimiter ][0m
+
+  [36m64[0m  [36m      [:div[0m
+  [36m65[0m  [36m       [rf/bind-fields add-grain-form-template item[0m
+  [33m66[0m  [1m        #(when (some #{:submit} %1)]])))[0m
+  [0m  [0m  [33m                                    ^--- Unmatched delimiter ][0m
+  [36m67[0m  [36m[0m
+  [36m68[0m  [36m(defn grains-page [][0m
+  [36m69[0m  [36m  [:div.container[0m
+
+[36m----  Reader Error : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.325 seconds.[0m
+[36m----  Could not Read  src/cljs/recipe_builder/core.cljs   line:67  column:13  ----[0m
+
+  [1mUnmatched delimiter ][0m
+
+  [36m65[0m  [36m       [rf/bind-fields add-grain-form-template {:keys [grain quantity]}[0m
+  [36m66[0m  [36m        #(when (some #{:submit} %1) (add-grains ([0m
+  [33m67[0m  [1m           ]])))[0m
+  [0m  [0m  [33m            ^--- Unmatched delimiter ][0m
+  [36m68[0m  [36m[0m
+  [36m69[0m  [36m(defn grains-page [][0m
+  [36m70[0m  [36m  [:div.container[0m
+
+[36m----  Reader Error : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/recipe_builder/core.cljs   line:65  column:56  ----[0m
+
+  [1mUse of undeclared Var recipe-builder.core/grain[0m
+
+  [36m61[0m  [36m(defn grain-form [][0m
+  [36m62[0m  [36m  (let [item (atom {})][0m
+  [36m63[0m  [36m    (fn [][0m
+  [36m64[0m  [36m      [:div[0m
+  [33m65[0m  [1m       [rf/bind-fields add-grain-form-template {:keys [grain quantity]}[0m
+  [0m  [0m  [33m                                                       ^--- Use of undeclared Var recipe-builder.core/grain[0m
+  [36m66[0m  [36m        #(when (some #{:submit} %1) (add-grains quantity grain))]])))[0m
+  [36m67[0m  [36m[0m
+  [36m68[0m  [36m(defn grains-page [][0m
+  [36m69[0m  [36m  [:div.container[0m
+  [36m70[0m  [36m   [:div.row[0m
+
+[36m----  Compiler Warning : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/recipe_builder/core.cljs   line:65  column:62  ----[0m
+
+  [1mUse of undeclared Var recipe-builder.core/quantity[0m
+
+  [36m61[0m  [36m(defn grain-form [][0m
+  [36m62[0m  [36m  (let [item (atom {})][0m
+  [36m63[0m  [36m    (fn [][0m
+  [36m64[0m  [36m      [:div[0m
+  [33m65[0m  [1m       [rf/bind-fields add-grain-form-template {:keys [grain quantity]}[0m
+  [0m  [0m  [33m                                                             ^--- Use of undeclared Var recipe-builder.core/quantity[0m
+  [36m66[0m  [36m        #(when (some #{:submit} %1) (add-grains quantity grain))]])))[0m
+  [36m67[0m  [36m[0m
+  [36m68[0m  [36m(defn grains-page [][0m
+  [36m69[0m  [36m  [:div.container[0m
+  [36m70[0m  [36m   [:div.row[0m
+
+[36m----  Compiler Warning : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/recipe_builder/core.cljs   line:66  column:49  ----[0m
+
+  [1mUse of undeclared Var recipe-builder.core/quantity[0m
+
+  [36m62[0m  [36m  (let [item (atom {})][0m
+  [36m63[0m  [36m    (fn [][0m
+  [36m64[0m  [36m      [:div[0m
+  [36m65[0m  [36m       [rf/bind-fields add-grain-form-template {:keys [grain quantity]}[0m
+  [33m66[0m  [1m        #(when (some #{:submit} %1) (add-grains quantity grain))]])))[0m
+  [0m  [0m  [33m                                                ^--- Use of undeclared Var recipe-builder.core/quantity[0m
+  [36m67[0m  [36m[0m
+  [36m68[0m  [36m(defn grains-page [][0m
+  [36m69[0m  [36m  [:div.container[0m
+  [36m70[0m  [36m   [:div.row[0m
+  [36m71[0m  [36m    [:h2 "Current Order"]][0m
+
+[36m----  Compiler Warning : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/recipe_builder/core.cljs   line:66  column:58  ----[0m
+
+  [1mUse of undeclared Var recipe-builder.core/grain[0m
+
+  [36m62[0m  [36m  (let [item (atom {})][0m
+  [36m63[0m  [36m    (fn [][0m
+  [36m64[0m  [36m      [:div[0m
+  [36m65[0m  [36m       [rf/bind-fields add-grain-form-template {:keys [grain quantity]}[0m
+  [33m66[0m  [1m        #(when (some #{:submit} %1) (add-grains quantity grain))]])))[0m
+  [0m  [0m  [33m                                                         ^--- Use of undeclared Var recipe-builder.core/grain[0m
+  [36m67[0m  [36m[0m
+  [36m68[0m  [36m(defn grains-page [][0m
+  [36m69[0m  [36m  [:div.container[0m
+  [36m70[0m  [36m   [:div.row[0m
+  [36m71[0m  [36m    [:h2 "Current Order"]][0m
+
+[36m----  Compiler Warning : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.72 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/recipe_builder/core.cljs   line:65  column:56  ----[0m
+
+  [1mUse of undeclared Var recipe-builder.core/grain[0m
+
+  [36m61[0m  [36m(defn grain-form [][0m
+  [36m62[0m  [36m  (let [item (atom {})][0m
+  [36m63[0m  [36m    (fn [][0m
+  [36m64[0m  [36m      [:div[0m
+  [33m65[0m  [1m       [rf/bind-fields add-grain-form-template {:keys [grain quantity]}[0m
+  [0m  [0m  [33m                                                       ^--- Use of undeclared Var recipe-builder.core/grain[0m
+  [36m66[0m  [36m        #(when (some #{:submit} %1) (add-grains quantity grain))]])))[0m
+  [36m67[0m  [36m[0m
+  [36m68[0m  [36m(defn grains-page [][0m
+  [36m69[0m  [36m  [:div.container[0m
+  [36m70[0m  [36m   [:div.row[0m
+
+[36m----  Compiler Warning : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/recipe_builder/core.cljs   line:65  column:62  ----[0m
+
+  [1mUse of undeclared Var recipe-builder.core/quantity[0m
+
+  [36m61[0m  [36m(defn grain-form [][0m
+  [36m62[0m  [36m  (let [item (atom {})][0m
+  [36m63[0m  [36m    (fn [][0m
+  [36m64[0m  [36m      [:div[0m
+  [33m65[0m  [1m       [rf/bind-fields add-grain-form-template {:keys [grain quantity]}[0m
+  [0m  [0m  [33m                                                             ^--- Use of undeclared Var recipe-builder.core/quantity[0m
+  [36m66[0m  [36m        #(when (some #{:submit} %1) (add-grains quantity grain))]])))[0m
+  [36m67[0m  [36m[0m
+  [36m68[0m  [36m(defn grains-page [][0m
+  [36m69[0m  [36m  [:div.container[0m
+  [36m70[0m  [36m   [:div.row[0m
+
+[36m----  Compiler Warning : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/recipe_builder/core.cljs   line:66  column:49  ----[0m
+
+  [1mUse of undeclared Var recipe-builder.core/quantity[0m
+
+  [36m62[0m  [36m  (let [item (atom {})][0m
+  [36m63[0m  [36m    (fn [][0m
+  [36m64[0m  [36m      [:div[0m
+  [36m65[0m  [36m       [rf/bind-fields add-grain-form-template {:keys [grain quantity]}[0m
+  [33m66[0m  [1m        #(when (some #{:submit} %1) (add-grains quantity grain))]])))[0m
+  [0m  [0m  [33m                                                ^--- Use of undeclared Var recipe-builder.core/quantity[0m
+  [36m67[0m  [36m[0m
+  [36m68[0m  [36m(defn grains-page [][0m
+  [36m69[0m  [36m  [:div.container[0m
+  [36m70[0m  [36m   [:div.row[0m
+  [36m71[0m  [36m    [:h2 "Current Order"]][0m
+
+[36m----  Compiler Warning : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/recipe_builder/core.cljs   line:66  column:58  ----[0m
+
+  [1mUse of undeclared Var recipe-builder.core/grain[0m
+
+  [36m62[0m  [36m  (let [item (atom {})][0m
+  [36m63[0m  [36m    (fn [][0m
+  [36m64[0m  [36m      [:div[0m
+  [36m65[0m  [36m       [rf/bind-fields add-grain-form-template {:keys [grain quantity]}[0m
+  [33m66[0m  [1m        #(when (some #{:submit} %1) (add-grains quantity grain))]])))[0m
+  [0m  [0m  [33m                                                         ^--- Use of undeclared Var recipe-builder.core/grain[0m
+  [36m67[0m  [36m[0m
+  [36m68[0m  [36m(defn grains-page [][0m
+  [36m69[0m  [36m  [:div.container[0m
+  [36m70[0m  [36m   [:div.row[0m
+  [36m71[0m  [36m    [:h2 "Current Order"]][0m
+
+[36m----  Compiler Warning : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.598 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/recipe_builder/core.cljs   line:65  column:56  ----[0m
+
+  [1mUse of undeclared Var recipe-builder.core/grain[0m
+
+  [36m61[0m  [36m(defn grain-form [][0m
+  [36m62[0m  [36m  (let [item (atom {})][0m
+  [36m63[0m  [36m    (fn [][0m
+  [36m64[0m  [36m      [:div[0m
+  [33m65[0m  [1m       [rf/bind-fields add-grain-form-template {:keys [grain quantity]}[0m
+  [0m  [0m  [33m                                                       ^--- Use of undeclared Var recipe-builder.core/grain[0m
+  [36m66[0m  [36m        #(when (some #{:submit} %1) (add-grains (:quantity %3) (:grain %3)))]])))[0m
+  [36m67[0m  [36m[0m
+  [36m68[0m  [36m(defn grains-page [][0m
+  [36m69[0m  [36m  [:div.container[0m
+  [36m70[0m  [36m   [:div.row[0m
+
+[36m----  Compiler Warning : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/recipe_builder/core.cljs   line:65  column:62  ----[0m
+
+  [1mUse of undeclared Var recipe-builder.core/quantity[0m
+
+  [36m61[0m  [36m(defn grain-form [][0m
+  [36m62[0m  [36m  (let [item (atom {})][0m
+  [36m63[0m  [36m    (fn [][0m
+  [36m64[0m  [36m      [:div[0m
+  [33m65[0m  [1m       [rf/bind-fields add-grain-form-template {:keys [grain quantity]}[0m
+  [0m  [0m  [33m                                                             ^--- Use of undeclared Var recipe-builder.core/quantity[0m
+  [36m66[0m  [36m        #(when (some #{:submit} %1) (add-grains (:quantity %3) (:grain %3)))]])))[0m
+  [36m67[0m  [36m[0m
+  [36m68[0m  [36m(defn grains-page [][0m
+  [36m69[0m  [36m  [:div.container[0m
+  [36m70[0m  [36m   [:div.row[0m
+
+[36m----  Compiler Warning : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.607 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/recipe_builder/core.cljs   line:65  column:56  ----[0m
+
+  [1mUse of undeclared Var recipe-builder.core/grain[0m
+
+  [36m61[0m  [36m(defn grain-form [][0m
+  [36m62[0m  [36m  (let [item (atom {})][0m
+  [36m63[0m  [36m    (fn [][0m
+  [36m64[0m  [36m      [:div[0m
+  [33m65[0m  [1m       [rf/bind-fields add-grain-form-template {:keys [grain quantity]}[0m
+  [0m  [0m  [33m                                                       ^--- Use of undeclared Var recipe-builder.core/grain[0m
+  [36m66[0m  [36m        #(when (some #{:submit} %1) (add-grains (:quantity %3) (:grain %3)))]])))[0m
+  [36m67[0m  [36m[0m
+  [36m68[0m  [36m(defn grains-page [][0m
+  [36m69[0m  [36m  [:div.container[0m
+  [36m70[0m  [36m   [:div.row[0m
+
+[36m----  Compiler Warning : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/recipe_builder/core.cljs   line:65  column:62  ----[0m
+
+  [1mUse of undeclared Var recipe-builder.core/quantity[0m
+
+  [36m61[0m  [36m(defn grain-form [][0m
+  [36m62[0m  [36m  (let [item (atom {})][0m
+  [36m63[0m  [36m    (fn [][0m
+  [36m64[0m  [36m      [:div[0m
+  [33m65[0m  [1m       [rf/bind-fields add-grain-form-template {:keys [grain quantity]}[0m
+  [0m  [0m  [33m                                                             ^--- Use of undeclared Var recipe-builder.core/quantity[0m
+  [36m66[0m  [36m        #(when (some #{:submit} %1) (add-grains (:quantity %3) (:grain %3)))]])))[0m
+  [36m67[0m  [36m[0m
+  [36m68[0m  [36m(defn grains-page [][0m
+  [36m69[0m  [36m  [:div.container[0m
+  [36m70[0m  [36m   [:div.row[0m
+
+[36m----  Compiler Warning : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.571 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.491 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.521 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.72 seconds.[0m
+[36m----  Could not Read  src/cljs/recipe_builder/core.cljs   line:59  column:79  ----[0m
+
+  [1mUnmatched delimiter ][0m
+
+  [36m57[0m  [36m    [:div.col-md-2 [:input.form-control {:field :numeric :id :quantity}]]][0m
+  [36m58[0m  [36m   [:div.row[0m
+  [33m59[0m  [1m    [:button.btn.btn-default {:key :add-item :id :submit "add grain to order"]]])[0m
+  [0m  [0m  [33m                                                                              ^--- Unmatched delimiter ][0m
+  [36m60[0m  [36m[0m
+  [36m61[0m  [36m(defn grain-form [][0m
+  [36m62[0m  [36m  (let [item (atom {})][0m
+
+[36m----  Reader Error : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.293 seconds.[0m
+[36m----  Could not Read  src/cljs/recipe_builder/core.cljs   line:59  column:79  ----[0m
+
+  [1mMap literal must contain an even number of forms[0m
+
+  [36m57[0m  [36m    [:div.col-md-2 [:input.form-control {:field :numeric :id :quantity}]]][0m
+  [36m58[0m  [36m   [:div.row[0m
+  [33m59[0m  [1m    [:button.btn.btn-default {:key :add-item :id :submit "add grain to order"}]]])[0m
+  [0m  [0m  [33m                                                                              ^--- Map literal must contain an even number of forms[0m
+  [36m60[0m  [36m[0m
+  [36m61[0m  [36m(defn grain-form [][0m
+  [36m62[0m  [36m  (let [item (atom {})][0m
+
+[36m----  Reader Error : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.299 seconds.[0m
+[36m----  Could not Read  src/cljs/recipe_builder/core.cljs   line:59  column:79  ----[0m
+
+  [1mMap literal must contain an even number of forms[0m
+
+  [36m57[0m  [36m    [:div.col-md-2 [:input.form-control {:field :numeric :id :quantity}]]][0m
+  [36m58[0m  [36m   [:div.row[0m
+  [33m59[0m  [1m    [:button.btn.btn-default {:key :add-item :id :submit "add grain to order"}]]])[0m
+  [0m  [0m  [33m                                                                              ^--- Map literal must contain an even number of forms[0m
+  [36m60[0m  [36m[0m
+  [36m61[0m  [36m(defn grain-form [][0m
+  [36m62[0m  [36m  (let [item (atom {})][0m
+
+[36m----  Reader Error : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.825 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.655 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 1.38 seconds.[0m
+[36m----  Could not Read  src/cljs/recipe_builder/core.cljs   line:64  column:7  ----[0m
+
+  [1mEOF while reading, starting at line 64 and column 7[0m
+
+  [36m62[0m  [36m  (let [item (atom {})][0m
+  [36m63[0m  [36m    (fn [][0m
+  [33m64[0m  [1m      [:div[0m
+  [0m  [0m  [33m      ^--- EOF while reading, starting at line 64 and column 7[0m
+  [36m65[0m  [36m       [rf/bind-fields add-grain-form-template item][0m
+  [36m66[0m  [36m[0m
+  [36m67[0m  [36m(defn grains-page [][0m
+
+[36m----  Reader Error : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.313 seconds.[0m
+[36m----  Could not Read  src/cljs/recipe_builder/core.cljs   line:60  column:3  ----[0m
+
+  [1mEOF while reading, starting at line 60 and column 3[0m
+
+  [36m59[0m  [36m(defn grain-form [][0m
+  [33m60[0m  [1m  (let [item (atom {})][0m
+  [0m  [0m  [33m  ^--- EOF while reading, starting at line 60 and column 3[0m
+  [36m61[0m  [36m    (fn [][0m
+  [36m62[0m  [36m      [:div[0m
+  [36m63[0m  [36m       [rf/bind-fields add-grain-form-template item][0m
+
+[36m----  Reader Error : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 0.297 seconds.[0m
+[36m----  Could not Read  src/cljs/recipe_builder/core.cljs   line:60  column:3  ----[0m
+
+  [1mEOF while reading, starting at line 60 and column 3[0m
+
+  [36m59[0m  [36m(defn grain-form [][0m
+  [33m60[0m  [1m  (let [item (atom {})][0m
+  [0m  [0m  [33m  ^--- EOF while reading, starting at line 60 and column 3[0m
+  [36m61[0m  [36m    (fn [][0m
+  [36m62[0m  [36m      [:div[0m
+  [36m63[0m  [36m       [rf/bind-fields add-grain-form-template item][0m
+
+[36m----  Reader Error : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[31mFailed to compile "target/cljsbuild/public/js/app.js" in 1.085 seconds.[0m
+[36m----  Could not Read  src/cljs/recipe_builder/core.cljs   line:60  column:3  ----[0m
+
+  [1mEOF while reading, starting at line 60 and column 3[0m
+
+  [36m59[0m  [36m(defn grain-form [][0m
+  [33m60[0m  [1m  (let [item (atom {})][0m
+  [0m  [0m  [33m  ^--- EOF while reading, starting at line 60 and column 3[0m
+  [36m61[0m  [36m    (fn [][0m
+  [36m62[0m  [36m      [:div[0m
+  [36m63[0m  [36m       [rf/bind-fields add-grain-form-template item][0m
+
+[36m----  Reader Error : Please see src/cljs/recipe_builder/core.cljs  ----[0m
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.93 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.441 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.459 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.412 seconds.[0m
+notifying browser that file changed:  out/recipe_builder/core.js
