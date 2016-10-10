@@ -30,17 +30,19 @@
          [nav-link "#/" "Home" :home collapsed?]
          [nav-link "#/grains" "Grains" :grains collapsed?]]]])))
 
-(def grains ["a" "b" "c"])
+(def orders (r/atom []))
 
-(def orders (r/atom [{:quantity 0.2 :grain "barley"} {:quantity 1.0 :grain "wheat"}]))
+(defn fetch-grains! []
+  (GET "http://localhost:8080/grains" {:handler #(session/put! :grains (get % "data"))}))
 
-(defn add-grains [quantity grain]
+
+(defn add-grains [{:keys [quantity grain]}]
   (swap! orders #(conj % {:quantity quantity :grain grain})))
 
 (defn order-panel []
   [:ul.list-group
    (for [{:keys [quantity grain]} @orders]
-     [:li.list-group-item
+     [:li.list-group-item {:key (str grain quantity)}
       (str quantity "kg of " grain)])])
 
 
@@ -50,8 +52,10 @@
     [:div.col-md-2  [:label "type of grain"]]
     [:div.col-md-5
      [:select.form-control {:field :list :id :grain}
-      (for [g grains]
-        [:option {:key g} g])]]]
+      (let [grains (session/get :grains)]
+        (println grains)
+        (for [g grains]
+          [:option {:key g} g]))]]]
    [:div.row
     [:div.col-md-2 [:label "quantity"]]
     [:div.col-md-2 [:input.form-control {:field :numeric :id :quantity}]]]])
@@ -62,14 +66,16 @@
       [:div
        [rf/bind-fields add-grain-form-template item]
        [:div.row
-        [:button.btn.btn-default {:on-click #(add-grains (:quantity @item) (:grain @item))} "add grain to order"]]])))
+        [:button.btn.btn-default {:on-click #(do (println @item) (add-grains @item))} "add grain to order"]]])))
        
 
 (defn grains-page []
   [:div.container
+   [:p]
    [:div.row
     [:h2 "Current Order"]]
    [:div.row [order-panel]]
+   [:p]
    [:div.row [:h2 "Add a grain"]]
    [:div.row
     [:div.col-md-12
@@ -129,6 +135,7 @@
 
 (defn init! []
   (load-interceptors!)
+  (fetch-grains!)
   (fetch-docs!)
   (hook-browser-navigation!)
   (mount-components))
